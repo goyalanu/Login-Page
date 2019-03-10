@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id" content="642062083090-n0p3b1ahsa9bkq5c3991o3rqj83hntdg.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+<!--         <p class="acc">LOGIN PAGE</p>
+ -->   
+        <div class="format">
+            <p class="acc01">SIGN IN</p>
+            <form class="ab">
+                First Name:<br/><input type="text"name="first_name"size="40"/><br />
+                Last Name:<br/><input type="text"name="last_name"size="40"/><br />
+                Password:<br/><input type="text"size="40" maxlength="15"/><br>
+                <form action="/cgi-bin/html5.cgi"method="get">
+                    Enter Email:<br/><input type="email"name="newinput"size="40"
+                    placeholder="xyz@gmail.com"/><br />
+                    Gender:
+                        <input type="radio"name="gender"value="male">Male
+                        <input type="radio"name="gender"value="female">Female<br/>    
+                        <input type="submit"value="Submit"><br/>
+                </form>
+            </form>
+        </div>
+        
+    
+        <div class="g-signin2" data-width="300" data-height="50" data-longtitle="true">
+            <div class="data01">
+                <p>Profile Detail</p>
+                <img id="pic" class="img-circle" width="100" height="100"/>
+                <p>Email Address</p>
+                <p id="email" class="alert alert-danger" ></p>
+                <button onclick="signOut()" class="btn btn-danger">sign out</button>
+            </div>
+        </div>
+    
+    
+</body>
+</html>
