@@ -16,7 +16,9 @@ body{
     width:500px;
     height:450px;
     position:absolute;
-    transform:translate(100%,-100%);
+    transform:translate(50%,-50%);
+    top:350px;
+    left:25rem;
     background-color:#fff;
     box-shadow:0px 10px 50px rgba(0,0,0,0.7);
     
